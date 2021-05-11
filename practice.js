@@ -28,16 +28,16 @@ for (let i = 0; i < string.length; i++) {
 console.log(returnArr)
 }
 
-leftRotations("abc") 
+// leftRotations("abc") 
 // ➞ ["abc", "bca", "cab"]
 
-rightRotations("abc")
+// rightRotations("abc")
 // ➞ ["abc", "cab", "bca"]
 
-leftRotations("abcdef") 
+// leftRotations("abcdef") 
 // ➞ ["abcdef", "bcdefa", "cdefab", "defabc", "efabcd", "fabcde"]
 
-rightRotations("abcdef") 
+// rightRotations("abcdef") 
 // ➞ ["abcdef", "fabcde", "efabcd", "defabc", "cdefab", "bcdefa"]
 
 
@@ -46,6 +46,17 @@ rightRotations("abcdef")
 // Numbers in Strings
 // Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. If there are no strings containing numbers, return an empty array.
 
+function numInStr(array) {
+    var returnArr = [];
+    var hasNum = /\d/;
+   array.forEach(element => {
+       if(hasNum.test(element)) {
+           returnArr.push(element)
+       }
+   });
+
+   console.log(returnArr)
+}
 
 
 
