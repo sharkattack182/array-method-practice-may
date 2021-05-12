@@ -60,14 +60,34 @@ function numInStr(array) {
 
 
 
-numInStr(["1a", "a", "2b", "b"]) 
+// numInStr(["1a", "a", "2b", "b"]) 
 // ➞ ["1a", "2b"]
 
-numInStr(["abc", "abc10"]) 
+// numInStr(["abc", "abc10"]) 
 // ➞ ["abc10"]
 
-numInStr(["abc", "ab10c", "a10bc", "bcd"]) 
+// numInStr(["abc", "ab10c", "a10bc", "bcd"]) 
 // ➞ ["ab10c", "a10bc"]
 
-numInStr(["this is a test", "test1"]) 
+// numInStr(["this is a test", "test1"]) 
 // ➞ ["test1"]
+
+
+// Date: May 12 2020
+// Sum of Missing Numbers
+// Create a function that returns the sum of missing numbers from the given array.
+
+
+
+
+sumMissingNumbers([4, 3, 8, 1, 2]) 
+// ➞ 18
+// 5 + 6 + 7 = 18
+
+sumMissingNumbers([17, 16, 15, 10, 11, 12]) 
+// ➞ 27
+// 13 + 14 = 27
+
+sumMissingNumbers([1, 2, 3, 4, 5]) 
+// ➞ 0
+// No Missing Numbers (i.e. all numbers in [1, 5] are present in the list)
