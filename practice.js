@@ -132,6 +132,7 @@ function apocalyptic(num) {
         const element = arr[i];
         if(element === arr[i+1] && element === arr[i+2]) {
             index = i - 1;
+            break;
         }
     }
 
@@ -154,5 +155,5 @@ apocalyptic(157)
 apocalyptic(175) 
 // ➞ "Crisis averted. Resume sinning."
 
-apocalyptic(220) 
+ apocalyptic(220) 
 // ➞ "Repent! 6 days until the Apocalypse!"
