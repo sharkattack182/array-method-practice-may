@@ -121,3 +121,38 @@ function sumMissingNumbers(array) {
 // Date: May 13 2020
 // Apocalyptic Numbers
 // A number n is apocalyptic if 2^n contains a string of 3 consecutive 6s (666 being the presumptive "number of the beast").
+// Create a function that takes a number n as input. If the number is apocalyptic, find the index of 666 in 2^n, and return "Repent! X days until the Apocalypse!" (X being the index). If not, return "Crisis averted. Resume sinning.".
+
+
+function apocalyptic(num) {
+    var pow = JSON.stringify(Math.pow(2, num))
+    var arr =pow.split("");
+    var index = 0;
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        if(element === arr[i+1] && element === arr[i+2]) {
+            index = i - 1;
+        }
+    }
+
+    if(index === 0) {
+        console.log("Crisis Averted. Resume Sinning")
+    } else {
+        console.log("Repent " + index + " days until the apocalypse!")
+    }
+}
+
+
+apocalyptic(109) 
+// ➞ "Crisis averted. Resume sinning."
+
+apocalyptic(157) 
+// ➞ "Repent! 9 days until the Apocalypse!"
+// 2^157 -> 182687704666362864775460604089535377456991567872
+// 666 at 10th position (index 9)
+
+apocalyptic(175) 
+// ➞ "Crisis averted. Resume sinning."
+
+apocalyptic(220) 
+// ➞ "Repent! 6 days until the Apocalypse!"
