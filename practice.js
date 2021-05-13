@@ -77,6 +77,30 @@ function numInStr(array) {
 // Sum of Missing Numbers
 // Create a function that returns the sum of missing numbers from the given array.
 
+function sumMissingNumbers(array) {
+    var sortedArr = array.sort((a,b) => (a-b));
+
+    var firstNum = sortedArr[0];
+    var lastNum = sortedArr[sortedArr.length - 1];
+
+    var compareArr = [];
+    var sum = 0;
+
+    for (let i = firstNum; i <= lastNum; i++) {
+        compareArr.push(i)
+    };
+
+    for (let i = 0; i < compareArr.length; i++) {
+        const element = compareArr[i];
+
+        var booleanVal = sortedArr.includes(element);
+        if(booleanVal === false) {
+            sum += parseInt(element);
+        }
+    }
+
+    console.log(sum)
+}
 
 
 
