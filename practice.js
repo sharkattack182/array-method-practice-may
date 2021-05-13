@@ -104,14 +104,20 @@ function sumMissingNumbers(array) {
 
 
 
-sumMissingNumbers([4, 3, 8, 1, 2]) 
+// sumMissingNumbers([4, 3, 8, 1, 2]) 
 // ➞ 18
 // 5 + 6 + 7 = 18
 
-sumMissingNumbers([17, 16, 15, 10, 11, 12]) 
+// sumMissingNumbers([17, 16, 15, 10, 11, 12]) 
 // ➞ 27
 // 13 + 14 = 27
 
-sumMissingNumbers([1, 2, 3, 4, 5]) 
+// sumMissingNumbers([1, 2, 3, 4, 5]) 
 // ➞ 0
 // No Missing Numbers (i.e. all numbers in [1, 5] are present in the list)
+
+
+
+// Date: May 13 2020
+// Apocalyptic Numbers
+// A number n is apocalyptic if 2^n contains a string of 3 consecutive 6s (666 being the presumptive "number of the beast").
