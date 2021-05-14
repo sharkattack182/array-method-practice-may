@@ -177,11 +177,17 @@ function reverseOdd(string) {
 }
 
 
-reverseOdd("Bananas") 
+// reverseOdd("Bananas") 
 // ➞ "sananaB"
 
-reverseOdd("One two three four") 
+// reverseOdd("One two three four") 
 // ➞ "enO owt eerht four"
 
-reverseOdd("Make sure uoy only esrever sdrow of ddo length")
+// reverseOdd("Make sure uoy only esrever sdrow of ddo length")
 // ➞ "Make sure you only reverse words of odd length"
+
+
+
+// Date: May 14 2021
+// Positive Dominant
+// An array is positive dominant if it contains strictly more unique positive values than unique negative values. Write a function that returns true if an array is positive dominant.
