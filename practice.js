@@ -221,16 +221,31 @@ function isPositiveDominant(array) {
 }
 
 
-isPositiveDominant([1, 1, 1, 1, -3, -4]) 
+// isPositiveDominant([1, 1, 1, 1, -3, -4]) 
 // ➞ false
 // There is only 1 unique positive value (1).
 // There are 2 unique negative values (-3, -4).
 
-isPositiveDominant([5, 99, 832, -3, -4]) 
+// isPositiveDominant([5, 99, 832, -3, -4]) 
 // ➞ true
 
-isPositiveDominant([5, 0]) 
+// isPositiveDominant([5, 0]) 
 // ➞ true
 
-isPositiveDominant([0, -4, -1]) 
+// isPositiveDominant([0, -4, -1]) 
 // ➞ false
+
+
+// Date: May 14 2021
+// Censored Strings
+// Someone has attempted to censor my strings by replacing every vowel with a *, l*k* th*s. Luckily, I've been able to find the vowels that were removed.
+// Given a censored string and a string of the censored vowels, return the original uncensored string.
+
+
+uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo") 
+// ➞ "Where did my vowels go?"
+uncensor("abcd", "") 
+// ➞ "abcd"
+
+uncensor("*PP*RC*S*", "UEAE") 
+// ➞ "UPPERCASE"
