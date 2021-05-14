@@ -137,23 +137,28 @@ function apocalyptic(num) {
     }
 
     if(index === 0) {
-        console.log("Crisis Averted. Resume Sinning")
+        console.log("Crisis averted. Resume sinning.")
     } else {
-        console.log("Repent " + index + " days until the apocalypse!")
+        console.log("Repent! " + index + " days until the Apocalypse!")
     }
 }
 
 
-apocalyptic(109) 
+// apocalyptic(109) 
 // ➞ "Crisis averted. Resume sinning."
 
-apocalyptic(157) 
+// apocalyptic(157) 
 // ➞ "Repent! 9 days until the Apocalypse!"
 // 2^157 -> 182687704666362864775460604089535377456991567872
 // 666 at 10th position (index 9)
 
-apocalyptic(175) 
+// apocalyptic(175) 
 // ➞ "Crisis averted. Resume sinning."
 
- apocalyptic(220) 
+//  apocalyptic(220) 
 // ➞ "Repent! 6 days until the Apocalypse!"
+
+
+// Date: May 14 2021 
+// Reverse the Odd Length Words
+// Given a string, reverse all the words which have odd length. The even length words are not changed.
