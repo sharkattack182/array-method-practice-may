@@ -162,3 +162,26 @@ function apocalyptic(num) {
 // Date: May 14 2021 
 // Reverse the Odd Length Words
 // Given a string, reverse all the words which have odd length. The even length words are not changed.
+
+function reverseOdd(string) {
+    const split = string.split(" ");
+    returnArr = split.map(word => {
+        if(word.length % 2 !== 0) {
+           return word.split("").reverse().join("")
+        } else {
+            return word
+        }
+    });
+
+    console.log(returnArr.join(" "))
+}
+
+
+reverseOdd("Bananas") 
+// ➞ "sananaB"
+
+reverseOdd("One two three four") 
+// ➞ "enO owt eerht four"
+
+reverseOdd("Make sure uoy only esrever sdrow of ddo length")
+// ➞ "Make sure you only reverse words of odd length"
