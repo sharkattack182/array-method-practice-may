@@ -260,10 +260,55 @@ function uncensor(string, vowels) {
 }
 
 
-uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo") 
+// uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo") 
 // ➞ "Where did my vowels go?"
-uncensor("abcd", "") 
+// uncensor("abcd", "") 
 // ➞ "abcd"
-
-uncensor("*PP*RC*S*", "UEAE") 
+// uncensor("*PP*RC*S*", "UEAE") 
 // ➞ "UPPERCASE"
+
+// Date: May 14 2021
+// Whats the missing Letter?
+// Given a string of letters in the English alphabet, return the letter that's missing from the string. The missing letter will make the string be in alphabetical order (from A to Z).
+
+function missingLetter(string) {
+    var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+    var array = string.split("");
+    var startIndex;
+    var endIndex;
+    var missingChar;
+    for (let i = 0; i < alphabet.length; i++) {
+        const element = alphabet[i];
+        if(element === array[0]) {
+            startIndex = i;
+        } else if(element === array[array.length - 1]) {
+            endIndex = i;
+        }
+    }
+
+    var compare = alphabet.join("").substring(startIndex, endIndex).split("");
+    for (let j = 0; j < compare.length; j++) {
+        const element = compare[j];
+        if(element !== array[j]) {
+            missingChar = element;
+            break;
+        }
+    }
+
+    if(missingChar === undefined) {
+        console.log("No Missing Letter")
+    } else {
+        console.log(missingChar)
+    }
+
+
+}
+
+missingLetter("abdefg") 
+// ➞ "c"
+missingLetter("mnopqs") 
+// ➞ "r"
+missingLetter("tuvxyz") 
+// ➞ "w"
+missingLetter("ghijklmno") 
+// ➞ "No Missing Letter"
