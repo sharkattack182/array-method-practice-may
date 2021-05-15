@@ -314,15 +314,32 @@ function firstRepeat(string) {
   console.log(repeatLetter)
 }
 
-firstRepeat("legolas");
+// firstRepeat("legolas");
 // ➞ "l"
 
-firstRepeat("Gandalf");
+// firstRepeat("Gandalf");
 // ➞ "a"
 
-firstRepeat("Balrog");
+// firstRepeat("Balrog");
 // ➞ "-1"
 
-firstRepeat("Isildur");
+// firstRepeat("Isildur");
 // ➞ "-1"
 // Case sensitive "I" not equal to "i"
+
+
+
+// Date: May 15 2021
+// Lonely Numbers
+// Given a number, insert duplicate digits on both sides of all digits which appear in a group of 1.
+
+
+
+numbersNeedFriendsToo(123) 
+// ➞ 111222333
+
+numbersNeedFriendsToo(56657) 
+// ➞ 55566555777
+
+numbersNeedFriendsToo(33) 
+// ➞ 33
