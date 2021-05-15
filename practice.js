@@ -333,7 +333,32 @@ function firstRepeat(string) {
 // Lonely Numbers
 // Given a number, insert duplicate digits on both sides of all digits which appear in a group of 1.
 
+function numbersNeedFriendsToo(num) {
+    var array = num.toString().split("");
+    const returnArr = []
+    
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        const sub = num.toString().substring(i + 1);
+        const subArr = sub.split("")
+        if(!subArr.includes(element) && element !== array[i - 1]) {
+            for (let j = 0; j <= 2; j++) {
+                returnArr.push(element)
+            }
+        }else if(element !== array[i - 1] && element !== array[i + 1]) {
+            for (let j = 0; j <= 2; j++) {
+                returnArr.push(element)
+            }
+        } else {
+            returnArr.push(element)
+        }
+    }
 
+    console.log(returnArr.join(""))
+}
+
+numbersNeedFriendsToo(22733) 
+// ➞ 2277733
 
 numbersNeedFriendsToo(123) 
 // ➞ 111222333
