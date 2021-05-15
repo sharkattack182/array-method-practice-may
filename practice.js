@@ -376,6 +376,33 @@ function numbersNeedFriendsToo(num) {
 // Given the starting (top) position of the dial and the increments used for each turn of the dial, return an array containing the combination of the safe.
 
 
+function safecracker(start, movementArr) {
+    returnArr = [];
+
+    let firstPosition = parseInt(start)- parseInt(movementArr[0]);
+    if(firstPosition < 0) {
+        firstPosition = firstPosition + 100;
+    } 
+
+    returnArr.push(firstPosition);
+
+    let secondPosition = firstPosition + parseInt(movementArr[1]);
+    if(secondPosition > 99) {
+        secondPosition = secondPosition - 100;
+    }
+
+    returnArr.push(secondPosition);
+
+    let thirdPosition = secondPosition - parseInt(movementArr[2]);
+    if(thirdPosition < 0) {
+        thirdPosition = thirdPosition + 100;
+    }
+
+    returnArr.push(thirdPosition);
+
+    console.log(returnArr)
+}
+
 
 safecracker(96, [54, 48, 77]) 
 // ➞ [42, 90, 13]
