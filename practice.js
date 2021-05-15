@@ -316,18 +316,21 @@ function missingLetter(string) {
 
 
 // Date: May 15 2021
-// Holey Sort
-// What do the numbers 4, 6, 8, 9 and 0 have in common? They all have holes in them! Notice how the number 8 contains not one, but two holes.
-// Given an array of numbers, sort the array in accordance to how many holes occur in the number. It should be sorted in ascending order.
+// Find First Character that repeats
+// Create a function that takes a string and returns the first character that repeats. If there is no repeat of a character, return "-1".
 
 
 
 
-holeySort([44, 4, 444, 4444]) 
-// ➞ [4, 44, 444, 4444]
+firstRepeat("legolas") 
+// ➞ "l"
 
-holeySort([100, 888, 1660, 11]) 
-// ➞ [11, 100, 1660, 888]
+firstRepeat("Gandalf") 
+// ➞ "a"
 
-holeySort([8, 121, 41, 66]) 
-// ➞ [121, 41, 8, 66]
+firstRepeat("Balrog") 
+// ➞ "-1"
+
+firstRepeat("Isildur") 
+// ➞ "-1"
+// Case sensitive "I" not equal to "i"
