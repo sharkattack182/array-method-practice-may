@@ -304,11 +304,30 @@ function missingLetter(string) {
 
 }
 
-missingLetter("abdefg") 
+// missingLetter("abdefg") 
 // ➞ "c"
-missingLetter("mnopqs") 
+// missingLetter("mnopqs") 
 // ➞ "r"
-missingLetter("tuvxyz") 
+// missingLetter("tuvxyz") 
 // ➞ "w"
-missingLetter("ghijklmno") 
+// missingLetter("ghijklmno") 
 // ➞ "No Missing Letter"
+
+
+
+// Date: May 15 2021
+// Holey Sort
+// What do the numbers 4, 6, 8, 9 and 0 have in common? They all have holes in them! Notice how the number 8 contains not one, but two holes.
+// Given an array of numbers, sort the array in accordance to how many holes occur in the number. It should be sorted in ascending order.
+
+
+
+
+holeySort([44, 4, 444, 4444]) 
+// ➞ [4, 44, 444, 4444]
+
+holeySort([100, 888, 1660, 11]) 
+// ➞ [11, 100, 1660, 888]
+
+holeySort([8, 121, 41, 66]) 
+// ➞ [121, 41, 8, 66]
