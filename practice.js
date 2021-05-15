@@ -357,14 +357,31 @@ function numbersNeedFriendsToo(num) {
     console.log(returnArr.join(""))
 }
 
-numbersNeedFriendsToo(22733) 
+// numbersNeedFriendsToo(22733) 
 // ➞ 2277733
 
-numbersNeedFriendsToo(123) 
+// numbersNeedFriendsToo(123) 
 // ➞ 111222333
 
-numbersNeedFriendsToo(56657) 
+// numbersNeedFriendsToo(56657) 
 // ➞ 55566555777
 
-numbersNeedFriendsToo(33) 
+// numbersNeedFriendsToo(33) 
 // ➞ 33
+
+
+
+// Date May 15 2021
+// Safe Cracker
+// Given the starting (top) position of the dial and the increments used for each turn of the dial, return an array containing the combination of the safe.
+
+
+
+safecracker(96, [54, 48, 77]) 
+// ➞ [42, 90, 13]
+
+safecracker(43, [51, 38, 46]) 
+// ➞ [92, 30, 84]
+
+safecracker(4, [69, 88, 55]) 
+// ➞ [35, 23, 68]
