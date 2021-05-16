@@ -465,6 +465,22 @@ function digitCount(number) {
 // Given an array of numbers, create a function that removes 25% from every number in the array except the smallest number, and adds the total amount removed to the smallest number.
 
 
+function showTheLove(array) {
+    var sorted = array.sort((a,b) => a - b);
+    var returnArr = [];
+    var toBeAdded = 0;
+    for (let i = 1; i < sorted.length; i++) {
+        const element = sorted[i];
+        var reducedNum = element * .75;
+        returnArr.push(reducedNum);
+        toBeAdded += element * .25;
+    }
+
+    var firstNum = sorted[0] + toBeAdded
+    returnArr.unshift(firstNum);
+    console.log(returnArr)
+}
+
 
 showTheLove([4, 1, 4]) 
 // ➞ [3, 3, 3]
