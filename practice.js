@@ -422,7 +422,31 @@ function safecracker(start, movementArr) {
 // For each digit, replace it by the number of times it appears in the number.
 // The final instance of the number will be an integer, not a string.
 
+function digitCount(number) {
+    var array = number.toString().split("");
+    var countObj = {};
 
+    for (let i = 0; i < array.length; i++) {
+        const number = array[i];
+        countObj[number] = countObj[number] ? countObj[number] + 1 : 1;
+    }
+
+    var keys = Object.keys(countObj);
+    var values = Object.values(countObj);
+
+    var returnArr = array.map(num => {
+        let returnNum;
+        for (let j = 0; j < keys.length; j++) {
+            const element = keys[j];
+            if(num === element) {
+                returnNum = values[j]
+            } 
+        }
+        return returnNum;
+    })
+
+    console.log(parseInt(returnArr.join("")))
+}
 
 
 digitCount(221333) 
