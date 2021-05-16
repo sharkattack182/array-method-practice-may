@@ -404,11 +404,32 @@ function safecracker(start, movementArr) {
 }
 
 
-safecracker(96, [54, 48, 77]) 
+// safecracker(96, [54, 48, 77]) 
 // ➞ [42, 90, 13]
 
-safecracker(43, [51, 38, 46]) 
+// safecracker(43, [51, 38, 46]) 
 // ➞ [92, 30, 84]
 
-safecracker(4, [69, 88, 55]) 
+// safecracker(4, [69, 88, 55]) 
 // ➞ [35, 23, 68]
+
+
+
+
+// Date: May 16 2021 
+// Keeping Count
+// Given a number, create a function which returns a new number based on the following rules:
+// For each digit, replace it by the number of times it appears in the number.
+// The final instance of the number will be an integer, not a string.
+
+
+
+
+digitCount(221333) 
+// ➞ 221333
+
+digitCount(136116) 
+// ➞ 312332
+
+digitCount(2) 
+// ➞ 1
