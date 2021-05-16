@@ -449,11 +449,28 @@ function digitCount(number) {
 }
 
 
-digitCount(221333) 
+// digitCount(221333) 
 // ➞ 221333
 
-digitCount(136116) 
+// digitCount(136116) 
 // ➞ 312332
 
-digitCount(2) 
+// digitCount(2) 
 // ➞ 1
+
+
+
+// Date: May 16 2021
+// Sharing is Caring
+// Given an array of numbers, create a function that removes 25% from every number in the array except the smallest number, and adds the total amount removed to the smallest number.
+
+
+
+showTheLove([4, 1, 4]) 
+// ➞ [3, 3, 3]
+
+showTheLove([16, 10, 8]) 
+// ➞ [12, 7.5, 14.5]
+
+showTheLove([2, 100]) 
+// ➞ [27, 75]
