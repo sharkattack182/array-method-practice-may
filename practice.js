@@ -537,14 +537,35 @@ function numInStr(array) {
 }
 
 
-numInStr(["1a", "a", "2b", "b"]) 
+// numInStr(["1a", "a", "2b", "b"]) 
 // ➞ ["1a", "2b"]
 
-numInStr(["abc", "abc10"]) 
+// numInStr(["abc", "abc10"]) 
 // ➞ ["abc10"]
 
-numInStr(["abc", "ab10c", "a10bc", "bcd"]) 
+// numInStr(["abc", "ab10c", "a10bc", "bcd"]) 
 // ➞ ["ab10c", "a10bc"]
 
-numInStr(["this is a test", "test1"]) 
+// numInStr(["this is a test", "test1"]) 
 // ➞ ["test1"]
+
+// Date: May 17 2021
+// Oddish vs Evenish;
+// Create a function that determines whether a number is Oddish or Evenish. A number is Oddish if the sum of all of its digits is odd, and a number is Evenish if the sum of all of its digits is even. If a number is Oddish, return "Oddish". Otherwise, return "Evenish".
+
+
+
+oddishOrEvenish(43) 
+// ➞ "Oddish"
+// 4 + 3 = 7
+// 7 % 2 = 1
+
+oddishOrEvenish(373) 
+// ➞ "Oddish"
+// 3 + 7 + 3 = 13
+// 13 % 2 = 1
+
+oddishOrEvenish(4433) 
+// ➞ "Evenish"
+// 4 + 4 + 3 + 3 = 14
+// 14 % 2 = 0
