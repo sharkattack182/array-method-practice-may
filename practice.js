@@ -499,7 +499,17 @@ function showTheLove(array) {
 // Create a function that returns the total number of boomerangs in an array.
 
 
-
+function countBoomerangs(array) {
+    var boomCount = 0;
+    for (let i = 1; i < array.length; i++) {
+        const element = array[i];
+        if(array[i - 1] === array[i + 1] && element !== array[i - 1]) {
+            boomCount ++;
+        }
+    }
+    
+    console.log(boomCount)
+}
 
 
 countBoomerangs([9, 5, 9, 5, 1, 1, 1]) 
