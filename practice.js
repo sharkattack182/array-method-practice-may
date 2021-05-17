@@ -482,11 +482,31 @@ function showTheLove(array) {
 }
 
 
-showTheLove([4, 1, 4]) 
+// showTheLove([4, 1, 4]) 
 // ➞ [3, 3, 3]
 
-showTheLove([16, 10, 8]) 
+// showTheLove([16, 10, 8]) 
 // ➞ [12, 7.5, 14.5]
 
-showTheLove([2, 100]) 
+// showTheLove([2, 100]) 
 // ➞ [27, 75]
+
+
+
+// Date MAy 16 2021
+// Number of Boomerangs
+// A boomerang is a V-shaped sequence that is either upright or upside down. Specifically, a boomerang can be defined as: sub-array of length 3, with the first and last digits being the same and the middle digit being different.
+// Create a function that returns the total number of boomerangs in an array.
+
+
+
+
+
+countBoomerangs([9, 5, 9, 5, 1, 1, 1]) 
+// ➞ 2
+
+countBoomerangs([5, 6, 6, 7, 6, 3, 9]) 
+// ➞ 1
+
+countBoomerangs([4, 4, 4, 9, 9, 9, 9]) 
+// ➞ 0
