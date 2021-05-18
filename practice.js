@@ -626,3 +626,82 @@ let cars = [
 ];
 
 
+// find will only return the first value;
+function findCarByColor(color) {
+    return cars.find(car => car.color === color)
+};
+
+function findCarByType(type) {
+    return cars.find((car) => car.type === type)
+}
+
+// filter creates a new array of objects with allthe objects that meet the filter criteria
+function findAllCarsByColor(color) {
+    return cars.filter((car) => car.color === color)
+}
+
+// function findAllCarsByColor(color) {
+//     var allCars = cars.filter((car) => {
+//        if(car.color === color) {
+//            return car
+//        } 
+//     }) 
+//     return allCars
+// }
+
+
+
+
+console.log(findAllCarsByColor('purple'));
+console.log(findAllCarsByColor('red'));
+
+
+
+
+const people = [
+    {
+        "name": "Person1",
+        "ssn": "111-11-1111",
+        "birthday": "1/1/2001",
+        "height": "5.5",
+        "weight": "115"
+    },
+    {
+        "name": "Person2",
+        "ssn": "222-22-2222",
+        "birthday": "2/1/2002",
+        "height": "6.2",
+        "weight": "195"
+    },
+    {
+        "name": "Person3",
+        "ssn": "333-33-3333",
+        "birthday": "3/1/2003",
+        "height": "5.3",
+        "weight": "315"
+    },
+    {
+        "name": "Person4",
+        "ssn": "444-44-4444",
+        "birthday": "4/1/2004",
+        "height": "4.5",
+        "weight": "110"
+    },
+    {
+        "name": "Person5",
+        "ssn": "555-55-5555",
+        "birthday": "5/1/2005",
+        "height": "5.5",
+        "weight": "200"
+    },
+    {
+        "name": "Person6",
+        "ssn": "666-66-6666",
+        "birthday": "6/1/2006",
+        "height": "6.1",
+        "weight": "215"
+    }
+];
+
+
+
