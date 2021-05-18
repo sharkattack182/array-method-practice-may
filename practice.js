@@ -564,17 +564,65 @@ function oddishOrEvenish(num) {
     }
 }
 
-oddishOrEvenish(43) 
+// oddishOrEvenish(43) 
 // ➞ "Oddish"
 // 4 + 3 = 7
 // 7 % 2 = 1
 
-oddishOrEvenish(373) 
+// oddishOrEvenish(373) 
 // ➞ "Oddish"
 // 3 + 7 + 3 = 13
 // 13 % 2 = 1
 
-oddishOrEvenish(4433) 
+// oddishOrEvenish(4433) 
 // ➞ "Evenish"
 // 4 + 4 + 3 + 3 = 14
 // 14 % 2 = 0
+
+
+
+// Date: May 18 2021
+// array.find() Practice
+// Not a daily activity but just trying out the find method n objects
+
+
+let cars = [
+    {
+      "color": "purple",
+      "type": "minivan",
+      "registration": new Date('2017-01-03'),
+      "capacity": 7
+    },
+    {
+      "color": "red",
+      "type": "station wagon",
+      "registration": new Date('2018-03-03'),
+      "capacity": 5
+    },
+    {
+        "color": "yellow",
+        "type": "sports car",
+        "registration": new Date('2017-02-03'),
+        "capacity": 2
+      },
+      {
+        "color": "blue",
+        "type": "station wagon",
+        "registration": new Date('2018-07-03'),
+        "capacity": 5
+      },
+      {
+        "color": "green",
+        "type": "minivan",
+        "registration": new Date('2017-02-03'),
+        "capacity": 7
+      },
+      {
+        "color": "red",
+        "type": "sports car",
+        "registration": new Date('2018-03-03'),
+        "capacity": 5
+      }
+];
+
+
