@@ -652,8 +652,8 @@ function findAllCarsByColor(color) {
 
 
 
-console.log(findAllCarsByColor('purple'));
-console.log(findAllCarsByColor('red'));
+// console.log(findAllCarsByColor('purple'));
+// console.log(findAllCarsByColor('red'));
 
 
 
@@ -663,45 +663,87 @@ const people = [
         "name": "Person1",
         "ssn": "111-11-1111",
         "birthday": "1/1/2001",
-        "height": "5.5",
-        "weight": "115"
+        "height": 5.5,
+        "weight": 115
     },
     {
         "name": "Person2",
         "ssn": "222-22-2222",
         "birthday": "2/1/2002",
-        "height": "6.2",
-        "weight": "195"
+        "height": 6.2,
+        "weight": 195
     },
     {
         "name": "Person3",
         "ssn": "333-33-3333",
         "birthday": "3/1/2003",
-        "height": "5.3",
-        "weight": "315"
+        "height": 5.3,
+        "weight": 315
     },
     {
         "name": "Person4",
         "ssn": "444-44-4444",
         "birthday": "4/1/2004",
-        "height": "4.5",
-        "weight": "110"
+        "height": 4.5,
+        "weight": 110
     },
     {
         "name": "Person5",
         "ssn": "555-55-5555",
         "birthday": "5/1/2005",
-        "height": "5.5",
-        "weight": "200"
+        "height": 5.5,
+        "weight": 200
     },
     {
         "name": "Person6",
         "ssn": "666-66-6666",
         "birthday": "6/1/2006",
-        "height": "6.1",
-        "weight": "215"
+        "height": 6.1,
+        "weight": 215
     }
 ];
 
 
+function findPerson(ssn) {
+    return people.find(person => person.ssn === ssn);
+}
 
+function findAverageHeight() {
+    var totalHeight = 0;
+    people.forEach(person => totalHeight += person.height);
+    return (totalHeight / people.length).toFixed(1);
+}
+
+function findAverageWeight() {
+    var totalWeight = 0;
+    people.forEach(person => totalWeight += person.weight);
+    return (totalWeight / people.length).toFixed(1);
+}
+
+
+function findPeopleByHeight(minHeight) {
+    return people.filter(person => person.height >= minHeight)
+}
+
+
+function filterPeopleByHeight(direction, height) {
+    if(direction === "above") {
+       return people.filter(person => person.height >= height) 
+    }
+    else {
+        return people.filter(person => person.height <= height) 
+    } 
+}
+
+
+console.log(findPerson("444-44-4444"));
+console.log(findPerson("666-66-6666"));
+console.log(findAverageHeight());
+console.log(findAverageWeight());
+console.log("-----------------------")
+console.log(findPeopleByHeight(5.5));
+console.log("-----------------------")
+console.log("ABOVE 5 FEET")
+console.log(filterPeopleByHeight("above", 5.5));
+console.log("BELOW 6 FEET")
+console.log(filterPeopleByHeight("below", 6));
