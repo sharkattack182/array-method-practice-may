@@ -754,47 +754,72 @@ function filterPeopleByHeight(direction, height) {
 const athletes = [
     {
         "name": "Andy",
-        "age": "20",
+        "age": 20,
         "sport": "football"
     },
     {
         "name": "Chris",
-        "age": "23",
+        "age": 23,
         "sport": "basketball"
     },
     {
         "name": "Sophia",
-        "age": "21",
+        "age": 21,
         "sport": "softball"
     },
     {
         "name": "Mike",
-        "age": "22",
+        "age": 22,
         "sport": "basketball"
     },
     {
         "name": "Sarah",
-        "age": "20",
-        "sport": "Soccer"
+        "age": 20,
+        "sport": "soccer"
     },
     {
         "name": "Christina",
-        "age": "21",
+        "age": 21,
         "sport": "gymnastics"
     },
     {
         "name": "Justin",
-        "age": "19",
+        "age": 19,
         "sport": "soccer"
     },
     {
         "name": "Jake",
-        "age": "23",
+        "age": 23,
         "sport": "gymnastics"
     },
     {
         "name": "Gus",
-        "age": "21",
+        "age": 21,
         "sport": "football"
     },
 ];
+
+
+function playerBySport(sport) {
+    return athletes.filter(ath => ath.sport === sport)
+};
+
+var footballPlayers = playerBySport("football");
+var soccerPlayers = playerBySport("soccer")
+// this creates a new array without altering the original array
+function potentialRoster(player) {
+    return [...footballPlayers, player]
+};
+
+// console.log(potentialRoster({"name": "Brian", "age": 22, "sport": "football"}))
+// console.log(footballPlayers)
+
+// Added in a random new guy to work him in between the spread operators
+var newGuy = {"name": "NEW GUY", "age": 22, "sport": "soccer"}
+var fallSports = [...footballPlayers, newGuy,...soccerPlayers];
+
+
+// Sorted the new array based on age
+var sorted = fallSports.sort((a,b) => (a.age > b.age) ? 1 : -1)
+
+console.log(sorted)
