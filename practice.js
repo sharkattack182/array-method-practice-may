@@ -736,14 +736,65 @@ function filterPeopleByHeight(direction, height) {
 }
 
 
-console.log(findPerson("444-44-4444"));
-console.log(findPerson("666-66-6666"));
-console.log(findAverageHeight());
-console.log(findAverageWeight());
-console.log("-----------------------")
-console.log(findPeopleByHeight(5.5));
-console.log("-----------------------")
-console.log("ABOVE 5 FEET")
-console.log(filterPeopleByHeight("above", 5.5));
-console.log("BELOW 6 FEET")
-console.log(filterPeopleByHeight("below", 6));
+// console.log(findPerson("444-44-4444"));
+// console.log(findPerson("666-66-6666"));
+// console.log(findAverageHeight());
+// console.log(findAverageWeight());
+// console.log("-----------------------")
+// console.log(findPeopleByHeight(5.5));
+// console.log("-----------------------")
+// console.log("ABOVE 5 FEET")
+// console.log(filterPeopleByHeight("above", 5.5));
+// console.log("BELOW 6 FEET")
+// console.log(filterPeopleByHeight("below", 6));
+
+
+
+
+const athletes = [
+    {
+        "name": "Andy",
+        "age": "20",
+        "sport": "football"
+    },
+    {
+        "name": "Chris",
+        "age": "23",
+        "sport": "basketball"
+    },
+    {
+        "name": "Sophia",
+        "age": "21",
+        "sport": "softball"
+    },
+    {
+        "name": "Mike",
+        "age": "22",
+        "sport": "basketball"
+    },
+    {
+        "name": "Sarah",
+        "age": "20",
+        "sport": "Soccer"
+    },
+    {
+        "name": "Christina",
+        "age": "21",
+        "sport": "gymnastics"
+    },
+    {
+        "name": "Justin",
+        "age": "19",
+        "sport": "soccer"
+    },
+    {
+        "name": "Jake",
+        "age": "23",
+        "sport": "gymnastics"
+    },
+    {
+        "name": "Gus",
+        "age": "21",
+        "sport": "football"
+    },
+];
