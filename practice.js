@@ -831,7 +831,15 @@ var sorted = fallSports.sort((a,b) => (a.age > b.age) ? 1 : -1)
 // Sum of Vowels
 // Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
 
+function sumOfVowels(string) {
+    var array = string.split("");
+    var a = array.filter(letter => letter === "A" || letter === "a").length;
+    var e = array.filter(letter => letter === "E" || letter === "e").length;
+    var i = array.filter(letter => letter === "I" || letter === "i").length;
 
+    var returnArr = [a * 4, e * 3, i * 1];
+    console.log(returnArr.reduce((a,b) => a + b));
+}
 
 
 sumOfVowels("Let\'s test this function.") 
