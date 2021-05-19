@@ -822,4 +822,23 @@ var fallSports = [...footballPlayers, newGuy,...soccerPlayers];
 // Sorted the new array based on age
 var sorted = fallSports.sort((a,b) => (a.age > b.age) ? 1 : -1)
 
-console.log(sorted)
+// console.log(sorted)
+
+
+
+
+// Date: MAy 18 2021
+// Sum of Vowels
+// Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
+
+
+
+
+sumOfVowels("Let\'s test this function.") 
+// ➞ 8
+
+sumOfVowels("Do I get the correct output?") 
+// ➞ 10
+
+sumOfVowels("I love edabit!") 
+// ➞ 12
