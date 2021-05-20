@@ -842,11 +842,20 @@ function sumOfVowels(string) {
 }
 
 
-sumOfVowels("Let\'s test this function.") 
+// sumOfVowels("Let\'s test this function.") 
 // ➞ 8
 
-sumOfVowels("Do I get the correct output?") 
+// sumOfVowels("Do I get the correct output?") 
 // ➞ 10
 
-sumOfVowels("I love edabit!") 
+// sumOfVowels("I love edabit!") 
 // ➞ 12
+
+
+
+
+// Date: May 19 2021
+// White Spaces Between Lower and Uppercase Letters
+// Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
+
+
