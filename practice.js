@@ -890,7 +890,23 @@ function insertWhitespace(string) {
 // Words With Duplicate Letters
 // Given a common phrase, return false if any individual word in the phrase contains duplicate letters. Return true otherwise.
 
+function noDuplicateLetters(string) {
+    var isDup = true;
+    const array = string.split(" ");
+    array.forEach(word => {
+        const arr = word.split("");
+        for (let i = 0; i < arr.length; i++) {
+            const element = arr[i];
+            let subString = word.substring(i + 1);
+            if(subString.split("").includes(element)) {
+                isDup = false;
+                return
+            }
+        }
+    });
 
+    console.log(isDup)
+}
 
 
 noDuplicateLetters("Fortune favours the bold.") 
