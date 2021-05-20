@@ -858,4 +858,28 @@ function sumOfVowels(string) {
 // White Spaces Between Lower and Uppercase Letters
 // Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
 
+function insertWhitespace(string) {
+    var array = string.split("");
+    var alpha = "abcdefghijklmnopqrstuvwxyz"
+    var upperArr = alpha.toUpperCase().split("");
 
+    var fixed = array.map(letter => {
+        if(upperArr.includes(letter)) {
+            return " " + letter;
+        } else {
+            return letter
+        }
+    });
+
+    console.log(fixed.join(""))
+}
+
+
+insertWhitespace("SheWalksToTheBeach") 
+// ➞ "She Walks To The Beach"
+
+insertWhitespace("MarvinTalksTooMuch") 
+// ➞ "Marvin Talks Too Much"
+
+insertWhitespace("TheGreatestUpsetInHistory") 
+// ➞ "The Greatest Upset In History"
