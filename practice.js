@@ -931,7 +931,25 @@ function noDuplicateLetters(string) {
 // Given an integer, find the round of it. An integer is called round if all its digits except the leftmost (most significant) are equal to zero.
 // Create a function that takes a number and returns the round of this number.
 
+function sumRound(num) {
+    var arr = num.toString().split("");
+    var returnArr = []
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        let zeros = num.toString().substring(i + 1, num.length).length
+        if(element !== "0") {
+           var zeroStr = "";
+           for (let j = 0; j < zeros; j++) {
+               zeroStr += 0
+           }
 
+           returnArr.push(element.concat(zeroStr))
+        }
+        
+    }
+
+    console.log(returnArr.sort((a,b) => a -b).join(" "));
+}
 
 sumRound(101) 
 // ➞ "1 100"
