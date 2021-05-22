@@ -909,16 +909,35 @@ function noDuplicateLetters(string) {
 }
 
 
-noDuplicateLetters("Fortune favours the bold.") 
+// noDuplicateLetters("Fortune favours the bold.") 
 // ➞ true
 
-noDuplicateLetters("You can lead a horse to water, but you can't make him drink.") 
+// noDuplicateLetters("You can lead a horse to water, but you can't make him drink.") 
 // ➞ true
 
-noDuplicateLetters("Look before you leap.") 
+// noDuplicateLetters("Look before you leap.") 
 // ➞ false
 // Duplicate letters in "Look" and "before".
 
-noDuplicateLetters("An apple a day keeps the doctor away.") 
+// noDuplicateLetters("An apple a day keeps the doctor away.") 
 // ➞ false
 // Duplicate letters in "apple", "keeps", "doctor", and "away".
+
+
+
+
+// Date: May 22 2021
+// Sum of Round Numbers
+// Given an integer, find the round of it. An integer is called round if all its digits except the leftmost (most significant) are equal to zero.
+// Create a function that takes a number and returns the round of this number.
+
+
+
+sumRound(101) 
+// ➞ "1 100"
+
+sumRound(1234) 
+// ➞ "4 30 200 1000"
+
+sumRound(54210) 
+// ➞ "10 200 4000 50000"
