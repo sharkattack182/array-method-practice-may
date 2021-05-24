@@ -951,11 +951,11 @@ function sumRound(num) {
     console.log(returnArr.sort((a,b) => a -b).join(" "));
 }
 
-sumRound(101) 
+// sumRound(101) 
 // ➞ "1 100"
 
-sumRound(1234) 
+// sumRound(1234) 
 // ➞ "4 30 200 1000"
 
-sumRound(54210) 
+// sumRound(54210) 
 // ➞ "10 200 4000 50000"
