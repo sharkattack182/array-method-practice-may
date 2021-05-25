@@ -967,7 +967,11 @@ function sumRound(num) {
 // Write a function that sorts an array of integers by their digit length in descending order, then settles ties by sorting numbers with the same digit length in ascending order.
 
 
-
+function digitSort(array) {
+    console.log(array.sort((a,b) => b.toString().length - a.toString().length || a - b))
+    return array.sort((a,b) => b.toString().length - a.toString().length || a - b);
+    
+}
 
 digitSort([77, 23, 5, 7, 101])
 // ➞ [101, 23, 77, 5, 7]
