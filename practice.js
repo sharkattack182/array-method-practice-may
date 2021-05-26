@@ -990,7 +990,36 @@ function digitSort(array) {
 // You will be given an array of numbers and a string stating whether the numbers are angles or sides.
 // The information may indicate more than one possible shape, but we just need to know if these details could be found in a right-angled triangle.
 
-
+function isRightAngle(arr, desc) {
+    if(arr.length > 3) {
+		return false;
+	}
+	
+	if(desc === 'angle') {
+		let sum = 0;
+		arr.forEach(angle => {
+			if(angle > 180) {
+				return false;
+			}
+			sum += angle;
+		})
+		
+		if(arr.length <= 1) {
+			return true;
+		} else if(arr.length < 3 && sum >= 180) {
+			return false;
+		} else if(arr.length === 3 && !arr.includes(90)) {
+			return false;
+		}
+		
+		return sum === 90 || sum === 180;
+	} else if(desc === 'side' && arr.length === 3) {
+		arr.sort();
+		return arr[0]**2 + arr[1]**2 === arr[2]**2;
+	} else if(desc === 'side' && arr.length < 3) {
+		return true;
+	}
+}
 
 
 isRightAngle([30, 60], "angle") 
