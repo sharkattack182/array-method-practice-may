@@ -973,11 +973,38 @@ function digitSort(array) {
     
 }
 
-digitSort([77, 23, 5, 7, 101])
+// digitSort([77, 23, 5, 7, 101])
 // ➞ [101, 23, 77, 5, 7]
 
-digitSort([1, 5, 9, 2, 789, 563, 444])
+// digitSort([1, 5, 9, 2, 789, 563, 444])
 // ➞ [444, 563, 789, 1, 2, 5, 9]
 
-digitSort([53219, 3772, 564, 32, 1])
+// digitSort([53219, 3772, 564, 32, 1])
 // ➞ [53219, 3772, 564, 32, 1]
+
+
+// Date May 25 2021
+// Is it a Right Angled Triangle?
+// Find out if a right-angled triangle can be made given some facts about the shape.
+// Given varying information about a shape, create a function that returns true if the shape could be a right-angle triangle and false if not.
+// You will be given an array of numbers and a string stating whether the numbers are angles or sides.
+// The information may indicate more than one possible shape, but we just need to know if these details could be found in a right-angled triangle.
+
+
+
+
+isRightAngle([30, 60], "angle") 
+// ➞ true
+// A third angle could be 90
+
+isRightAngle([20, 20, 20, 20], "angle") 
+// ➞ false
+// More than 3 sides
+
+isRightAngle([4, 5, 3], "side") 
+// ➞ true
+// 3**2 + 4**2 = 5**2
+
+isRightAngle([4, 5], "side") 
+// ➞ true
+// Third side may be 3
