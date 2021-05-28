@@ -1022,18 +1022,37 @@ function isRightAngle(arr, desc) {
 }
 
 
-isRightAngle([30, 60], "angle") 
+// isRightAngle([30, 60], "angle") 
 // ➞ true
 // A third angle could be 90
 
-isRightAngle([20, 20, 20, 20], "angle") 
+// isRightAngle([20, 20, 20, 20], "angle") 
 // ➞ false
 // More than 3 sides
 
-isRightAngle([4, 5, 3], "side") 
+// isRightAngle([4, 5, 3], "side") 
 // ➞ true
 // 3**2 + 4**2 = 5**2
 
-isRightAngle([4, 5], "side") 
+// isRightAngle([4, 5], "side") 
 // ➞ true
 // Third side may be 3
+
+
+
+// Date May 28 2021
+// Seven Boom
+// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+
+
+sevenBoom([1, 2, 3, 4, 5, 6, 7]) 
+// ➞ "Boom!"
+// 7 contains the number seven.
+
+sevenBoom([8, 6, 33, 100]) 
+// ➞ "there is no 7 in the array"
+// None of the items contain 7 within them.
+
+sevenBoom([2, 55, 60, 97, 86]) 
+// ➞ "Boom!"
+// 97 contains the number seven.
