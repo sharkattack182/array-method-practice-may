@@ -1045,6 +1045,19 @@ function isRightAngle(arr, desc) {
 // Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
 
 
+
+function sevenBoom(arr) {
+    if(arr.includes(7)) {
+        console.log("BOOM")
+    }
+
+    else if(arr.toString().split("").includes("7")){
+        console.log("BOOM")
+    } else {
+        console.log("there is no 7 in this array")
+    }
+}
+
 sevenBoom([1, 2, 3, 4, 5, 6, 7]) 
 // ➞ "Boom!"
 // 7 contains the number seven.
